@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6ACB2D7ACB334B728CECF172 /* Pods_VizFaceDetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F2FF4BD6C9761FBB87E641 /* Pods_VizFaceDetectorUITests.framework */; };
+		A759093F95E259587F125D9E /* Pods_VizFaceDetectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CB241DD01897EF09CA5372 /* Pods_VizFaceDetectorTests.framework */; };
+		B7CB72D723FCF08D896CAEB6 /* Pods_VizFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E8533CC15EA118B0FE697B /* Pods_VizFaceDetector.framework */; };
+		D686A0B322DC9D09007BF94B /* VizFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686A0B222DC9D09007BF94B /* VizFace.swift */; };
+		D6ED68EA22D8C499005D684C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED68E922D8C499005D684C /* AppDelegate.swift */; };
+		D6ED68EC22D8C499005D684C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED68EB22D8C499005D684C /* MainVC.swift */; };
+		D6ED68EF22D8C499005D684C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ED68ED22D8C499005D684C /* Main.storyboard */; };
+		D6ED68F122D8C49B005D684C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ED68F022D8C49B005D684C /* Assets.xcassets */; };
+		D6ED68F422D8C49B005D684C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ED68F222D8C49B005D684C /* LaunchScreen.storyboard */; };
+		D6ED68FF22D8C49B005D684C /* VizFaceDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED68FE22D8C49B005D684C /* VizFaceDetectorTests.swift */; };
+		D6ED690A22D8C49B005D684C /* VizFaceDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED690922D8C49B005D684C /* VizFaceDetectorUITests.swift */; };
+		D6ED691922D8C4E4005D684C /* VizNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED691822D8C4E4005D684C /* VizNetworkManager.swift */; };
+		D6ED692122D8DBC6005D684C /* VizImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED692022D8DBC6005D684C /* VizImagePicker.swift */; };
+		D6ED692322D8DC1C005D684C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ED692222D8DC1C005D684C /* UIViewExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6ED68FB22D8C49B005D684C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6ED68DE22D8C498005D684C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6ED68E522D8C499005D684C;
+			remoteInfo = VizFaceDetector;
+		};
+		D6ED690622D8C49B005D684C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6ED68DE22D8C498005D684C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6ED68E522D8C499005D684C;
+			remoteInfo = VizFaceDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34F2FF4BD6C9761FBB87E641 /* Pods_VizFaceDetectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizFaceDetectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F48B211F56B8DBCA79BA34 /* Pods-VizFaceDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetector/Pods-VizFaceDetector.release.xcconfig"; sourceTree = "<group>"; };
+		76CB241DD01897EF09CA5372 /* Pods_VizFaceDetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizFaceDetectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9122559DC754DC4FD80826B2 /* Pods-VizFaceDetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetectorUITests/Pods-VizFaceDetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		928B0C6087F288D08062D810 /* Pods-VizFaceDetectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetectorUITests/Pods-VizFaceDetectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93E8533CC15EA118B0FE697B /* Pods_VizFaceDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VizFaceDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		998169E0E63DC4F00FAF88F2 /* Pods-VizFaceDetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetectorTests/Pods-VizFaceDetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B8B466C57262BD901426473 /* Pods-VizFaceDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetector/Pods-VizFaceDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		B529FC13ABECBBEA6FEC1106 /* Pods-VizFaceDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VizFaceDetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VizFaceDetectorTests/Pods-VizFaceDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		D686A0B222DC9D09007BF94B /* VizFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizFace.swift; sourceTree = "<group>"; };
+		D6ED68E622D8C499005D684C /* VizFaceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VizFaceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6ED68E922D8C499005D684C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6ED68EB22D8C499005D684C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		D6ED68EE22D8C499005D684C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6ED68F022D8C49B005D684C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6ED68F322D8C49B005D684C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6ED68F522D8C49B005D684C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6ED68FA22D8C49B005D684C /* VizFaceDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VizFaceDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6ED68FE22D8C49B005D684C /* VizFaceDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizFaceDetectorTests.swift; sourceTree = "<group>"; };
+		D6ED690022D8C49B005D684C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6ED690522D8C49B005D684C /* VizFaceDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VizFaceDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6ED690922D8C49B005D684C /* VizFaceDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizFaceDetectorUITests.swift; sourceTree = "<group>"; };
+		D6ED690B22D8C49B005D684C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6ED691822D8C4E4005D684C /* VizNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizNetworkManager.swift; sourceTree = "<group>"; };
+		D6ED692022D8DBC6005D684C /* VizImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizImagePicker.swift; sourceTree = "<group>"; };
+		D6ED692222D8DC1C005D684C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6ED68E322D8C499005D684C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CB72D723FCF08D896CAEB6 /* Pods_VizFaceDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED68F722D8C49B005D684C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A759093F95E259587F125D9E /* Pods_VizFaceDetectorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED690222D8C49B005D684C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB2D7ACB334B728CECF172 /* Pods_VizFaceDetectorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3785742B44F985EFA82DE220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B8B466C57262BD901426473 /* Pods-VizFaceDetector.debug.xcconfig */,
+				54F48B211F56B8DBCA79BA34 /* Pods-VizFaceDetector.release.xcconfig */,
+				998169E0E63DC4F00FAF88F2 /* Pods-VizFaceDetectorTests.debug.xcconfig */,
+				B529FC13ABECBBEA6FEC1106 /* Pods-VizFaceDetectorTests.release.xcconfig */,
+				928B0C6087F288D08062D810 /* Pods-VizFaceDetectorUITests.debug.xcconfig */,
+				9122559DC754DC4FD80826B2 /* Pods-VizFaceDetectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF7A3FFECF8FDFB492FEC5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E8533CC15EA118B0FE697B /* Pods_VizFaceDetector.framework */,
+				76CB241DD01897EF09CA5372 /* Pods_VizFaceDetectorTests.framework */,
+				34F2FF4BD6C9761FBB87E641 /* Pods_VizFaceDetectorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6ED68DD22D8C498005D684C = {
+			isa = PBXGroup;
+			children = (
+				D6ED68E822D8C499005D684C /* VizFaceDetector */,
+				D6ED68FD22D8C49B005D684C /* VizFaceDetectorTests */,
+				D6ED690822D8C49B005D684C /* VizFaceDetectorUITests */,
+				D6ED68E722D8C499005D684C /* Products */,
+				3785742B44F985EFA82DE220 /* Pods */,
+				BF7A3FFECF8FDFB492FEC5DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6ED68E722D8C499005D684C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED68E622D8C499005D684C /* VizFaceDetector.app */,
+				D6ED68FA22D8C49B005D684C /* VizFaceDetectorTests.xctest */,
+				D6ED690522D8C49B005D684C /* VizFaceDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6ED68E822D8C499005D684C /* VizFaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED691F22D8D592005D684C /* Model */,
+				D6ED691E22D8D58E005D684C /* Controller */,
+				D6ED691D22D8D58A005D684C /* View */,
+				D6ED691A22D8D43F005D684C /* Extension */,
+				D6ED691722D8C4D3005D684C /* Network */,
+				D6ED68E922D8C499005D684C /* AppDelegate.swift */,
+				D6ED68F022D8C49B005D684C /* Assets.xcassets */,
+				D6ED68F222D8C49B005D684C /* LaunchScreen.storyboard */,
+				D6ED68F522D8C49B005D684C /* Info.plist */,
+			);
+			path = VizFaceDetector;
+			sourceTree = "<group>";
+		};
+		D6ED68FD22D8C49B005D684C /* VizFaceDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED68FE22D8C49B005D684C /* VizFaceDetectorTests.swift */,
+				D6ED690022D8C49B005D684C /* Info.plist */,
+			);
+			path = VizFaceDetectorTests;
+			sourceTree = "<group>";
+		};
+		D6ED690822D8C49B005D684C /* VizFaceDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED690922D8C49B005D684C /* VizFaceDetectorUITests.swift */,
+				D6ED690B22D8C49B005D684C /* Info.plist */,
+			);
+			path = VizFaceDetectorUITests;
+			sourceTree = "<group>";
+		};
+		D6ED691722D8C4D3005D684C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED691822D8C4E4005D684C /* VizNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D6ED691A22D8D43F005D684C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED692222D8DC1C005D684C /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D6ED691D22D8D58A005D684C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED68ED22D8C499005D684C /* Main.storyboard */,
+				D6ED692022D8DBC6005D684C /* VizImagePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6ED691E22D8D58E005D684C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6ED68EB22D8C499005D684C /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D6ED691F22D8D592005D684C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D686A0B222DC9D09007BF94B /* VizFace.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6ED68E522D8C499005D684C /* VizFaceDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6ED690E22D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetector" */;
+			buildPhases = (
+				F9A6A634F49EB423D805D040 /* [CP] Check Pods Manifest.lock */,
+				D6ED68E222D8C499005D684C /* Sources */,
+				D6ED68E322D8C499005D684C /* Frameworks */,
+				D6ED68E422D8C499005D684C /* Resources */,
+				A34922EAF53371192D23ACCE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VizFaceDetector;
+			productName = VizFaceDetector;
+			productReference = D6ED68E622D8C499005D684C /* VizFaceDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6ED68F922D8C49B005D684C /* VizFaceDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6ED691122D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetectorTests" */;
+			buildPhases = (
+				D71061E2FCA6EC33BE986FE3 /* [CP] Check Pods Manifest.lock */,
+				D6ED68F622D8C49B005D684C /* Sources */,
+				D6ED68F722D8C49B005D684C /* Frameworks */,
+				D6ED68F822D8C49B005D684C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6ED68FC22D8C49B005D684C /* PBXTargetDependency */,
+			);
+			name = VizFaceDetectorTests;
+			productName = VizFaceDetectorTests;
+			productReference = D6ED68FA22D8C49B005D684C /* VizFaceDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6ED690422D8C49B005D684C /* VizFaceDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6ED691422D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetectorUITests" */;
+			buildPhases = (
+				D203C1553AF566CFF7EC5CCF /* [CP] Check Pods Manifest.lock */,
+				D6ED690122D8C49B005D684C /* Sources */,
+				D6ED690222D8C49B005D684C /* Frameworks */,
+				D6ED690322D8C49B005D684C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6ED690722D8C49B005D684C /* PBXTargetDependency */,
+			);
+			name = VizFaceDetectorUITests;
+			productName = VizFaceDetectorUITests;
+			productReference = D6ED690522D8C49B005D684C /* VizFaceDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6ED68DE22D8C498005D684C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yaniv Hasbani";
+				TargetAttributes = {
+					D6ED68E522D8C499005D684C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					D6ED68F922D8C49B005D684C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D6ED68E522D8C499005D684C;
+					};
+					D6ED690422D8C49B005D684C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = D6ED68E522D8C499005D684C;
+					};
+				};
+			};
+			buildConfigurationList = D6ED68E122D8C498005D684C /* Build configuration list for PBXProject "VizFaceDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6ED68DD22D8C498005D684C;
+			productRefGroup = D6ED68E722D8C499005D684C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6ED68E522D8C499005D684C /* VizFaceDetector */,
+				D6ED68F922D8C49B005D684C /* VizFaceDetectorTests */,
+				D6ED690422D8C49B005D684C /* VizFaceDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6ED68E422D8C499005D684C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ED68F422D8C49B005D684C /* LaunchScreen.storyboard in Resources */,
+				D6ED68F122D8C49B005D684C /* Assets.xcassets in Resources */,
+				D6ED68EF22D8C499005D684C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED68F822D8C49B005D684C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED690322D8C49B005D684C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A34922EAF53371192D23ACCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VizFaceDetector/Pods-VizFaceDetector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VizFaceDetector/Pods-VizFaceDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D203C1553AF566CFF7EC5CCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VizFaceDetectorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71061E2FCA6EC33BE986FE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VizFaceDetectorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A6A634F49EB423D805D040 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VizFaceDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6ED68E222D8C499005D684C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D686A0B322DC9D09007BF94B /* VizFace.swift in Sources */,
+				D6ED692322D8DC1C005D684C /* UIViewExtension.swift in Sources */,
+				D6ED68EC22D8C499005D684C /* MainVC.swift in Sources */,
+				D6ED692122D8DBC6005D684C /* VizImagePicker.swift in Sources */,
+				D6ED68EA22D8C499005D684C /* AppDelegate.swift in Sources */,
+				D6ED691922D8C4E4005D684C /* VizNetworkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED68F622D8C49B005D684C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ED68FF22D8C49B005D684C /* VizFaceDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6ED690122D8C49B005D684C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ED690A22D8C49B005D684C /* VizFaceDetectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6ED68FC22D8C49B005D684C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6ED68E522D8C499005D684C /* VizFaceDetector */;
+			targetProxy = D6ED68FB22D8C49B005D684C /* PBXContainerItemProxy */;
+		};
+		D6ED690722D8C49B005D684C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6ED68E522D8C499005D684C /* VizFaceDetector */;
+			targetProxy = D6ED690622D8C49B005D684C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6ED68ED22D8C499005D684C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6ED68EE22D8C499005D684C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6ED68F222D8C49B005D684C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6ED68F322D8C49B005D684C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6ED690C22D8C49B005D684C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6ED690D22D8C49B005D684C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6ED690F22D8C49B005D684C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8B466C57262BD901426473 /* Pods-VizFaceDetector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D6ED691022D8C49B005D684C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F48B211F56B8DBCA79BA34 /* Pods-VizFaceDetector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D6ED691222D8C49B005D684C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 998169E0E63DC4F00FAF88F2 /* Pods-VizFaceDetectorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VizFaceDetector.app/VizFaceDetector";
+			};
+			name = Debug;
+		};
+		D6ED691322D8C49B005D684C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B529FC13ABECBBEA6FEC1106 /* Pods-VizFaceDetectorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VizFaceDetector.app/VizFaceDetector";
+			};
+			name = Release;
+		};
+		D6ED691522D8C49B005D684C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928B0C6087F288D08062D810 /* Pods-VizFaceDetectorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VizFaceDetector;
+			};
+			name = Debug;
+		};
+		D6ED691622D8C49B005D684C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9122559DC754DC4FD80826B2 /* Pods-VizFaceDetectorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6EQ2C96FBY;
+				INFOPLIST_FILE = VizFaceDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yaniv.VizFaceDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VizFaceDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6ED68E122D8C498005D684C /* Build configuration list for PBXProject "VizFaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6ED690C22D8C49B005D684C /* Debug */,
+				D6ED690D22D8C49B005D684C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6ED690E22D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6ED690F22D8C49B005D684C /* Debug */,
+				D6ED691022D8C49B005D684C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6ED691122D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6ED691222D8C49B005D684C /* Debug */,
+				D6ED691322D8C49B005D684C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6ED691422D8C49B005D684C /* Build configuration list for PBXNativeTarget "VizFaceDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6ED691522D8C49B005D684C /* Debug */,
+				D6ED691622D8C49B005D684C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6ED68DE22D8C498005D684C /* Project object */;
+}
